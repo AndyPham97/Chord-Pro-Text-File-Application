@@ -13,4 +13,4 @@ Run Assignment1.Server on the current directory it is at, so basically on the "A
 After opening a requested song by pressing enter or clicking on the "Open" button , always click on the 
 canvas afterwards as the chords and lyrics will show up on the canvas for some reason
 
-***If you can fix that odd error that would be great!
+***If you can fix that odd error that would be great! Also, I wasn't able to make it save according to the assignment spec from the file stated above
