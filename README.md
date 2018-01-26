@@ -1,4 +1,4 @@
-# COMP2406---Assignment-1
+# Chord Pro Text File Application
 
 You can check the "2406fall2017Assignment1" file to have a thorough and concise run down of more of what the webpage application does.
 
