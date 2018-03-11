@@ -108,7 +108,7 @@ var get_mime = function(filename) {
             return type;
         }
     }
-    return MIME_TYPES['txt'];
+    return MIME_TYPES["txt"];
 };
 
 http.createServer(function (request,response){
@@ -183,7 +183,7 @@ fs.readFile(songsPath + titles[0] + ".txt", function(err, data) {
        }
 
 		   //object to return to client
-          response.writeHead(200, {'Content-Type': MIME_TYPES["text"]});  //does not work with application/json MIME
+          response.writeHead(200, {"Content-Type": MIME_TYPES["txt"]});  //does not work with application/json MIME
            response.end(JSON.stringify(returnObj)); //send just the JSON object
       }
     });
@@ -191,7 +191,7 @@ fs.readFile(songsPath + titles[0] + ".txt", function(err, data) {
      if(request.method == "GET"){
 	 //handle GET requests as static file requests
 	 var filePath = ROOT_DIR + urlObj.pathname;
-	 if(urlObj.pathname === '/') filePath = ROOT_DIR + '/index.html';
+	 if(urlObj.pathname === '/') filePath = ROOT_DIR + '/assignment1.html';
 
      fs.readFile(filePath, function(err,data){
        if(err){
@@ -202,7 +202,7 @@ fs.readFile(songsPath + titles[0] + ".txt", function(err, data) {
           response.end(JSON.stringify(err));
           return;
          }
-         response.writeHead(200, {'Content-Type': get_mime(filePath)});
+         response.writeHead(200, {"Content-Type": get_mime(filePath)});
          response.end(data);
        });
 	 }
